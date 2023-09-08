@@ -1,0 +1,19 @@
+footer {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  color: #afacac;
+}
+
+.content,
+.social {
+  margin: 10px;
+}
