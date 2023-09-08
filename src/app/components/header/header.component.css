@@ -1,69 +1,45 @@
-:root {
-  --padding-container: 100px 0;
-  --color-title: #de5a39;
-}
-
 .container {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: var(--padding-container);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-
-.hero {
-  width: 100%;
-  height: 9vh;
-  position: relative;
-  display: grid;
-  grid-template-rows: 100px 1fr;
-  color: #fff;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-      248deg,
-      rgba(246, 5, 92, 0.2) 33.26%,
-      rgba(222, 94, 117, 0.13) 49.43%,
-      rgba(173, 28, 241, 0) 64.63%
-    ),
-    #de5a39;
-  background-size: cover;
-  z-index: -1;
-}
-
-/* Nav */
 
 .nav {
-  --padding-container: 0;
-  height: 100%;
+  background: linear-gradient(248deg, rgba(246, 5, 92, 0.20) 33.26%, rgba(173, 28, 241, 0.00) 59.42%, rgba(222, 94, 117, 0.13) 63.05%), #DE5A39;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+}
+
+.logo {
   display: flex;
   align-items: center;
 }
 
-.navtitle {
-  font-weight: 300;
+.logo img, .logo-text {
+  width: 30%; /* Ajusta el porcentaje según tus preferencias */
+  max-height: 40px; /* Establece una altura máxima para la imagen si es necesario */
 }
 
-.navlink {
-  margin-left: auto;
-  padding: 0;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
-  gap: 2em;
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
-.navitems {
-  list-style: none;
-}
-
-.navlinks {
-  color: #fff;
+.login {
   text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login:hover {
+  background-color: #fff;
+  color: #DE5A39;
 }
